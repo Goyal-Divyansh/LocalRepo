@@ -3,12 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Repo</title>
+    <title>About Us</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .left-side {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+        .left-side h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .left-side p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .left-side button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .left-side button:hover {
+            background-color: #0056b3;
+        }
+        .right-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+        .right-side img {
+            width: 300px;
+            height: 300px;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .right-side img:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
 </head>
 <body>
-    <p>Hello from local repo</p>
-    <p>This is a new feature(dropdown) only in trial branch
-    <p>This is a new feature only in trial branch(button)
-    </p>
+    <div class="container">
+        <div class="left-side">
+            <h1>About Us</h1>
+            <p>Welcome to our website! We are dedicated to providing the best service possible.</p>
+            <button onclick="window.location.href='anotherpage.html'">Learn More</button>
+        </div>
+        <div class="right-side">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.6tBB4E71m6To_Kqk-hNSTAHaFj&pid=Api&P=0&h=180" alt="About Us Image">
+        </div>
+    </div>
 </body>
 </html>
